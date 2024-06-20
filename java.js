@@ -1,6 +1,6 @@
 function Menu(){
     if(menu.style.display == 'none'){
-        menu.style.display = 'grid'}
+        menu.style.display = 'flex'}
         else{
             menu.style.display = 'none'
     }

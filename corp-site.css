@@ -1,4 +1,3 @@
-
 :root{
   --preto:  #000000;
   --cinza:  #72737500;
@@ -11,142 +10,119 @@
 
   }
 
-
 body{
-  height: 100%;
-  width: 100%;
-  background-color: var(--preto);
-  
+ width: 100vw;
+ height: auto;
+background-color: var(--preto);
 }
 
 header{
- width: 100%;
- display: flex;
- flex-wrap: wrap;
- justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+main{
+ max-width: 1600px;
+ height: auto;
+
 }
 
 nav{
-  width: 1700px;
-  height: 400px;
-  position: relative;
-  background-image: url(imagens/nav-G.jpg);
-
+  width: 100%;
+  height: auto;
 }
 
 nav div{
   width: 100%;
-  height: 100%;
-  font-size: 20px;
-  color: var(--branco);
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 0px;
-  margin: 0px;
-  text-align: center;
-  flex-wrap:wrap ;
-  display: flex;
-  align-items: center;
-  position: absolute;
-  bottom: 0;
-  background-color: var(--cinza);
-  margin-left: 200px;
-}
-
-
-
-  
-nav h1{
-  width: 100%;
   height: 400px;
-  font-size: 60px;
-  color: var(--branco);
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 0px;
-  margin: 0px;
-  text-align: center;
-  flex-wrap:wrap ;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  bottom: 0;
-}
+  background-image: url(imagens/nav-G.jpg);
+  display:flex;
+  justify-content:center;
+  align-items:center;
   
+}
+
+
+nav div h1{
+ max-width: 100%;
+ max-height: 100%;
+ color: var(--branco);
+ font-family:arial, Helvetica,sans-serif; 
+ padding: 0px;
+ margin: 0px;
+ font-size: 60px;
+ flex-wrap:wrap;
+ 
+}
+nav img{
+max-width: 100%;
+max-height:100%; 
+}
+
+
 aside{
-  width: 1700px;
-  height: 800px;
+  max-width: 100%;
+  max-height: auto;
   background-color: var(--azul-marinho);
+  padding: 0px;
+  margin-bottom: 20px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
- text-align: center;
- margin-block-end: 20px;
+  justify-content:center;
+} 
 
-}
 aside div{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   max-width: 100%;
-  height: 600px;
+  max-height: auto;
   padding: 0px;
   margin: 20px;
-  display: block;
-  position: relative;
   
 }
 
-
-aside img{
-  height: 70%;
-}
-
-
-
-aside  h1{
+ aside  h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 60px;
   width: 100%;
   color: var(--branco);
   font-family: Arial, Helvetica, sans-serif;
   padding: 0px;
-  margin: 0;
+  margin-bottom: 20px;
+  margin-top: 0px;
   
-}
-
-aside h2{
-  width: 100%;
-  font-size: 20px;
-  color: var(--branco);
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 0px;
-  margin: -0px;
-  text-align: center;
-  position: absolute;
 }
 
 aside p{
+  max-width: 360px;
+  max-height: 100%;
+  font-size: 18px;
+  color: var(--branco);
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0px;
+  margin-bottom: 0px;
+  margin-top: 30px;
+  padding-left:30px;
+  display: none;
+
+  }
+  
+
+ aside h2{
   width: 100%;
-  height: 100%;
   font-size: 20px;
   color: var(--branco);
   font-family: Arial, Helvetica, sans-serif;
   padding: 0px;
-  margin: 0px;
+  margin-bottom: 30px;
+  margin-top: 0; 
   text-align: center;
-  flex-wrap:wrap ;
-  display: flex;
-  align-content: end;
-  position: absolute;
-  bottom: 0;
-  background-color: var(--cinza);
-  display: none;
-}
-
-
-aside img{
-  max-width: 100%;
-  margin: 20px;
-  padding: 0px;
-
-}
+ }
 
 
 .Discovery:hover p{
@@ -165,53 +141,100 @@ aside img{
   display: flex;
 }
 
-
 article{
-  width: 1700px;
-  height: 800px;
+  width: 100%;
+  height: auto;
   background-color: var(--azul-marinho);
+  padding: 0px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
+  align-items: center; 
+  padding: 0px;
   margin-top: 20px;
-  
-}
-
-article div{
  
-  margin: 0px;
-  padding: 0px;
+  }
+
+  article div{
   max-width: 100%;
- max-height: 100%;
-}
+  height: auto;
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content:center;
+  justify-items: center;
+  align-items:center;
+  margin: 20px;
 
-article  img{
-  max-height: 60%;
-  max-width: 60%;
+  }
+  
+
+article img{
+  width: 90%;
+  height: 90%;
   padding: 0px;
-  margin: 0px;
-
+  margin: 20px;
 }
 
-article h1{
-  width: 100%;
-  font-size: 60px;
-  color: var(--branco);
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 0px;
-  margin: 0px;
-  text-align: center;
-}
 
-article p{
-  width: 100%;
-  font-size: 20px;
-  color: var(--branco);
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 0px;
-  margin: 0px;
-  text-align: center;
-}
+  article h1{
+    width: 100%;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    color: var(--branco);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin-top: 20px color:var(var(--branco));
+    margin-bottom: 0px;
+  }
+
+  article p{
+    width: 100%;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 18px;
+    color: var(--branco);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin-top:0px;
+    margin-bottom: 30px;
+  
+    
+    }
+ 
+
+    @media(max-width: 760px){
+
+      nav div{
+        display: block;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+      }
+
+      nav div h1{
+        font-size: 25px;
+        flex-wrap: wrap;
+    
+      }
+    
+      nav div img{
+        width: 50%;
+    
+      }
+    
+     aside  h1{
+      font-size: 25px;
+    
+     }
+
+      article img{
+        width:70%
+      }
+      
+       
+    }
